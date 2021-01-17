@@ -6,6 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(MeshRenderer))]
 public class ActivableBloc : MonoBehaviour
 {
+    //ce script peut avoir son collider d'activé ou non via un objet avec le scipt lever
     public Material matEnable;
     public Material matDisable;
 
@@ -23,6 +24,7 @@ public class ActivableBloc : MonoBehaviour
 
     }
 
+    //on change l'état et on applique le matèriaux en fonction de l'état actuel
     public void changeState()
     {
         col.enabled = !col.enabled;

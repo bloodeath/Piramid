@@ -21,11 +21,13 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
+    
     float time = 0;
     string lastLevelLoaded;
 
     private void Start()
     {
+        //lors de la création de notre manager, on récupére la scène active afin d'évité les erreurs
         lastLevelLoaded = SceneManager.GetActiveScene().name;
     }
 
@@ -35,6 +37,7 @@ public class GameManager : MonoBehaviour
         lastLevelLoaded = levelName;
     }
 
+    //si le joueur matiens la touche R pendans 2 sec, le niveau se relancera
     private void Update()
     {
         if (Input.GetKey(KeyCode.R)) {

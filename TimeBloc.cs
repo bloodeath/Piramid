@@ -6,6 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(MeshRenderer))]
 public class TimeBloc : MonoBehaviour
 {
+    //Un bloc dont le collider est actif de manière periodique
     public Material matEnable;
     public Material matDisable;
     public float duration = 1;

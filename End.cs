@@ -14,6 +14,7 @@ public class End : MonoBehaviour
         col = GetComponent<Collider>();
     }
 
+    //quand la roche arrive sur la fin, on passe au niveau suivant
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Stone")

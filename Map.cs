@@ -13,6 +13,7 @@ public class Map : MonoBehaviour
         GenerateMap(11);
     }
 
+    //permet de généré une map rapidement, elle m'a permis pour rapidement généré mes niveaux
     public void GenerateMap(float size)
     {
         float halfSize = (size - 1) / 2;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Permet d'activé ou déactivé le collider des blocs activables passés en paramètres
 public class Lever : MonoBehaviour
 {
     public List<ActivableBloc> actiBloc;
